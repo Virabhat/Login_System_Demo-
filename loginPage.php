@@ -27,30 +27,30 @@
 
 
     <main>
-        <div class="container mt-5">
+        <div class="container mt-4">
             <div class="row">
-                    <div class="text-center text-primary">
+                    <div class="text-center text-primary ">
                         <h2> <i class="fa-solid fa-circle-user" style="color: #63E6BE;"></i> เข้าสู่ระบบ</h2>
                     </div>
                     <br>
-                    <div class="container d-flex justify-content-center">
+                    <div class="container mt-2 d-flex justify-content-center">
                         <div class="border rounded p-5 " style="width:500px">
                             <form>
                                 <div class="form-group">
-                                    <label><b> <i class="fa-solid fa-envelope"></i> : อีเมล</b></label>
-                                    <input type="email" name="email" class="form-control"
+                                    <label><b> &nbsp; <i class="fa-solid fa-envelope"></i> : อีเมล</b></label>
+                                    <input type="email" name="email" class="form-control mt-2"
                                         placeholder="กรุณาใส่อีเมลของคุณ" required>
                                 </div>
                                 <br>
                                 <div class="form-group">
-                                    <label><b><i class="fa-solid fa-key"></i> :
+                                    <label><b> &nbsp; <i class="fa-solid fa-key"></i> :
                                             รหัสผ่าน</b></label>
-                                    <input type="password" class="form-control" name="password"
+                                    <input type="password" class="form-control mt-2" name="password"
                                         placeholder="กรุณาใส่รหัสผ่านของคุณ" required>
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label text-success" for="exampleCheck1">จดจำรหัสผ่าน</label>
+                                    <input type="checkbox" class="form-check-input mt-2" id="exampleCheck1">
+                                    <label class="form-check-label text-success mt-1" for="exampleCheck1">จดจำรหัสผ่าน</label>
                                 </div>
                                 <br><br>
                                 <div class="text-center">
@@ -58,7 +58,7 @@
                                 </div>
                                 <br><br><br>
                                 <div class="text-center mt-3">
-                                    <a href="Register/registerPage.php">ยังไม่มีบัญชี? สมัครสมาชิก</a>
+                                    <a href="Register/registerPage.php">ยังไม่มีบัญชี?สมัครสมาชิก</a>
                                 </div>
                             </form>
                         </div>

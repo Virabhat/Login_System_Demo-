@@ -34,31 +34,31 @@
                 </div>
                 <br>
                 <div class="container d-flex justify-content-center">
-                    <div class="border rounded p-5 w-50" style="height:510px">
+                    <div class="border rounded p-5 w-50" style="height:530px">
                         <form action="registerDB.php" method="POST">
                             <div class="form-group">
-                                <label><b> <i class="fa-solid fa-user"></i> : ชื่อผู้ใช้</b></label>
-                                <input type="text" name="username" class="form-control inputEmail4"
+                                <label><b> &nbsp; <i class="fa-solid fa-user"></i> : ชื่อผู้ใช้</b></label>
+                                <input type="text" name="username" class="form-control mt-2"
                                     placeholder="กรุณาใส่ชื่อของคุณ" required>
                             </div>
                             <br>
                             <div class="form-group">
-                                <label><b> <i class="fa-solid fa-envelope"></i> : อีเมล</b></label>
-                                <input type="email" name="email" class="form-control inputEmail4"
+                                <label><b> &nbsp; <i class="fa-solid fa-envelope"></i> : อีเมล</b></label>
+                                <input type="email" name="email" class="form-control mt-2"
                                     placeholder="กรุณาใส่อีเมลของคุณ" required>
                             </div>
                             <br>
                             <div class="form-group">
-                                <label for="exampleInputPassword1"><b><i class="fa-solid fa-key"></i> :
+                                <label><b> &nbsp; <i class="fa-solid fa-key"></i> :
                                         รหัสผ่าน</b></label>
-                                <input type="password" class="form-control" name="password_1"
+                                <input type="password" class="form-control mt-2" name="password_1"
                                     placeholder="กรุณาใส่รหัสผ่านของคุณ" required>
                             </div>
                             <br>
                             <div class="form-group">
-                                <label for="exampleInputPassword1"><b><i class="fa-solid fa-key"></i> :
+                                <label><b> &nbsp; <i class="fa-solid fa-key"></i> :
                                         รหัสผ่านอีกครั้ง</b></label>
-                                <input type="password" class="form-control" name="password_2"
+                                <input type="password" class="form-control mt-2" name="password_2"
                                     placeholder="กรุณาใส่รหัสผ่านของคุณ" required>
                             </div>
                             <br><br>
@@ -68,7 +68,7 @@
                                     สมัครสมาชิก</button>
                             </div>
                             <div class="text-center mt-3">
-                                <a href="../home.php">ฉันมีบัญชีเเล้ว</a>
+                                <a href="../loginPage.php">ฉันมีบัญชีเเล้ว</a>
                             </div>
                         </form>
                     </div>

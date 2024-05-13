@@ -23,7 +23,7 @@
                 showConfirmButton: false // ไม่แสดงปุ่มยืนยัน
             }).then(function () {
                 // เปลี่ยนเส้นทาง URL หลังจาก SweetAlert แสดงขึ้นเสร็จสิ้น
-                window.location.href = 'http://127.0.0.1/Login_System_DEMO/home.php'; // เปลี่ยน URL เป็น URL ที่คุณต้องการเปลี่ยนไป
+                window.location.href = 'http://127.0.0.1/Login_System_DEMO/homePage.php'; // เปลี่ยน URL เป็น URL ที่คุณต้องการเปลี่ยนไป
             });
         });
     </script>
