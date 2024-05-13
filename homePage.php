@@ -1,21 +1,22 @@
 <?php include ('ConnectDB/conn.php'); ?>
 
-<?php 
-
+<?php
     session_start();
 
     if(!isset($_SESSION['username'])){
-        $_SESSION['msg'] = "คุณต้องเข้าสู่ระบบก่อน"; 
-        header('location:home.php');
+        $_SESSION['msg'] = "กรุณาเข้าสู่ระบบก่อน";
+        header('location: loginPage.php');
     }
 
     if(isset($_GET['logout'])){
         session_destroy();
-        unset($_SESSION['$username']);
-        header('location:home.php');
+        unset($_SESSION['username']);
+        header('location: loginPage.php');
     }
-
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,19 +44,23 @@
 
 
     <main>
-        <div class="container mt-5">
-            <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                    attention
-                    to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.
-                </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
+
+        <?php if(isset($_SESSION['success'])) : ?>
+            <div class="text-success">
+                <h3>
+                    <?php 
+                        echo $_SESSION['success'];
+                        unset($_SESSION['success']);
+                    ?>
+                </h3>
             </div>
+        <?php endif ?>
+
+        <div class="container mt-5">
+            <?php if (isset($_SESSION['username'])): ?>
+                <p>Welcome <strong><?php echo $_SESSION['username']; ?> </strong></p>
+                <p><a href="homePage.php?logout='1'" style="color: red;"></a></p>
+            <?php endif ?>
         </div>
     </main>
 
